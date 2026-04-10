@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { Suspense, type ReactNode } from "react";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { Sidebar } from "@/components/sidebar";
 import { sidebarArticles } from "@/lib/help-center-content";
@@ -26,7 +26,9 @@ export function GuideShell({
         ]}
       />
       <div className="grid gap-6 md:grid-cols-[260px_1fr]">
-        <Sidebar title="All Guides" currentPath={currentPath} items={sidebarArticles} />
+        <Suspense fallback={<div className="hidden md:block" />}>
+          <Sidebar title="All Guides" currentPath={currentPath} items={sidebarArticles} />
+        </Suspense>
         <article
           className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
         >
