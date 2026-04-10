@@ -17,8 +17,18 @@ export const metadata: Metadata = {
     title: "Finxa Commerce Help Center",
     description:
       "Step-by-step documentation for merchants using Finxa Commerce.",
+    siteName: "Finxa Commerce Help Center",
+    locale: "en_US",
     type: "website",
     url: "/",
+    images: [
+      {
+        url: "/Finxa.png",
+        width: 1200,
+        height: 630,
+        alt: "Finxa Commerce Help Center",
+      },
+    ],
   },
 };
 
