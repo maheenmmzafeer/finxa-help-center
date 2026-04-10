@@ -5,14 +5,14 @@ import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
 export const metadata: Metadata = {
   title: "Products Guide | Finxa Commerce Help Center",
   description:
-    "Manage products, variants, media, collections, tags, and SEO settings in Finxa Commerce.",
+    "Manage products, variants, media, collections, tags and SEO settings in Finxa Commerce.",
 };
 
 export default function ProductsPage() {
   return (
     <GuideShell
       title="Products Guide"
-      description="Build a clear and searchable catalog with variants, collections, and optimized product pages."
+      description="Build a clear and searchable catalog with variants, collections and optimized product pages."
       currentPath="/products"
     >
       <section>
@@ -20,7 +20,7 @@ export default function ProductsPage() {
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Open Products and click Add Product.</li>
           <li>Write a clear product name and concise description.</li>
-          <li>Set price, compare-at price, SKU, and available stock.</li>
+          <li>Set price, compare-at price, SKU and available stock.</li>
           <li>Choose Active status when the product is ready to sell.</li>
         </ol>
       </section>
@@ -36,7 +36,7 @@ export default function ProductsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Organize with Collections, Tags, and SEO</h2>
+        <h2 className="text-xl font-semibold text-slate-900">Organize with Collections, Tags and SEO</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Add product tags for filtering and campaign grouping.</li>
           <li>Assign the product to one or more collections.</li>

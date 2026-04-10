@@ -18,14 +18,14 @@ export const categoryCards: CategoryCard[] = [
   {
     title: "Getting Started",
     description:
-      "Create your Finxa Commerce store, complete onboarding, and publish your first product.",
+      "Create your Finxa Commerce store, complete onboarding and publish your first product. Learn the core setup flow step by step so you can get live faster with confidence.",
     href: "/getting-started",
     keywords: ["signup", "onboarding", "store setup", "first product"],
   },
   {
     title: "Products",
     description:
-      "Manage products, variants, collections, tags, images, and product SEO settings.",
+      "Manage products, variants, collections, tags, images and product SEO settings.",
     href: "/products",
     keywords: ["variants", "images", "collections", "seo", "inventory"],
   },
@@ -39,28 +39,28 @@ export const categoryCards: CategoryCard[] = [
   {
     title: "Storefront",
     description:
-      "Customize your theme using the editor for colors, typography, sections, and homepage blocks.",
+      "Customize your theme using the editor for colors, typography, sections and homepage blocks.",
     href: "/storefront",
     keywords: ["theme", "editor", "branding", "fonts", "sections"],
   },
   {
     title: "Orders",
     description:
-      "Track order lifecycle, fulfill shipments, process refunds, and review customer details.",
+      "Track order lifecycle, fulfill shipments, process refunds and review customer details.",
     href: "/orders",
     keywords: ["fulfillment", "refunds", "customer", "order status"],
   },
   {
     title: "Shipping",
     description:
-      "Configure shipping zones, flat rates, weight-based rules, and free shipping thresholds.",
+      "Configure shipping zones, flat rates, weight-based rules and free shipping thresholds.",
     href: "/shipping",
     keywords: ["zones", "rates", "weight", "free shipping"],
   },
   {
     title: "Markets",
     description:
-      "Run multiple markets with currencies, languages, and market-specific storefront overrides.",
+      "Run multiple markets with currencies, languages and market-specific storefront overrides.",
     href: "/markets",
     keywords: ["multi-market", "currencies", "languages", "localization"],
   },

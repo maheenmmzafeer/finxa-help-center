@@ -34,8 +34,8 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full bg-page-gradient text-slate-900">
-        <div className="flex min-h-full flex-col">
+      <body className="min-h-screen bg-page-gradient text-slate-900">
+        <div className="flex min-h-screen flex-col">
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />

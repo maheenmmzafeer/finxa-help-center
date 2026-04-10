@@ -27,9 +27,13 @@ export function GuideShell({
       />
       <div className="grid gap-6 md:grid-cols-[260px_1fr]">
         <Sidebar title="All Guides" currentPath={currentPath} items={sidebarArticles} />
-        <article className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <article
+          className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+        >
           <header>
-            <h1 className="text-3xl font-bold tracking-tight text-slate-900">{title}</h1>
+            <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+              {title}
+            </h1>
             <p className="mt-3 text-base leading-7 text-slate-600">{description}</p>
           </header>
           <div className="mt-8 space-y-8">{children}</div>

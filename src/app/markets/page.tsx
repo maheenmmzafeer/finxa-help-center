@@ -5,7 +5,7 @@ import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
 export const metadata: Metadata = {
   title: "Markets Guide | Finxa Commerce Help Center",
   description:
-    "Configure multiple markets with localized currencies, languages, and market-specific storefront overrides.",
+    "Configure multiple markets with localized currencies, languages and market-specific storefront overrides.",
 };
 
 export default function MarketsPage() {

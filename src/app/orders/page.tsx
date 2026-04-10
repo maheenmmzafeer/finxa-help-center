@@ -5,7 +5,7 @@ import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
 export const metadata: Metadata = {
   title: "Orders Guide | Finxa Commerce Help Center",
   description:
-    "Understand the order lifecycle, fulfill items, process refunds, and review customer details in Finxa Commerce.",
+    "Understand the order lifecycle, fulfill items, process refunds and review customer details in Finxa Commerce.",
 };
 
 export default function OrdersPage() {
@@ -19,7 +19,7 @@ export default function OrdersPage() {
         <h2 className="text-xl font-semibold text-slate-900">Track the Order Lifecycle</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Open Orders to view new and processing orders.</li>
-          <li>Filter by payment status, fulfillment status, and date range.</li>
+          <li>Filter by payment status, fulfillment status and date range.</li>
           <li>Open an order record to review timeline events.</li>
           <li>Use internal notes for handoff between team members.</li>
         </ol>
@@ -45,7 +45,7 @@ export default function OrdersPage() {
         </ol>
         <ScreenshotPlaceholder
           title="Order detail with fulfillment and refund actions"
-          note="Capture this from Finxa Commerce: order timeline, customer details, and refund panel."
+          note="Capture this from Finxa Commerce: order timeline, customer details and refund panel."
         />
       </section>
     </GuideShell>

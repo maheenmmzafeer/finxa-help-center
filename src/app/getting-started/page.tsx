@@ -5,7 +5,7 @@ import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
 export const metadata: Metadata = {
   title: "Getting Started | Finxa Commerce Help Center",
   description:
-    "Learn how to sign up, complete onboarding, configure your store, and publish your first product in Finxa Commerce.",
+    "Learn how to sign up, complete onboarding, configure your store and publish your first product in Finxa Commerce.",
 };
 
 export default function GettingStartedPage() {
@@ -19,7 +19,7 @@ export default function GettingStartedPage() {
         <h2 className="text-xl font-semibold text-slate-900">Create Your Store Account</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Open Finxa Commerce and click Create Store.</li>
-          <li>Enter your business email, store name, and secure password.</li>
+          <li>Enter your business email, store name and secure password.</li>
           <li>Confirm your email using the verification message.</li>
           <li>Sign in and choose your primary selling country.</li>
         </ol>
@@ -39,7 +39,7 @@ export default function GettingStartedPage() {
         <h2 className="text-xl font-semibold text-slate-900">Add Your First Product</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Go to Products and click Add Product.</li>
-          <li>Enter product title, description, price, and stock quantity.</li>
+          <li>Enter product title, description, price and stock quantity.</li>
           <li>Upload at least one product image for the listing card.</li>
           <li>Set product status to Active and click Save.</li>
         </ol>

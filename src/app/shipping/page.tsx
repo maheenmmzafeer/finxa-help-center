@@ -5,7 +5,7 @@ import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
 export const metadata: Metadata = {
   title: "Shipping Guide | Finxa Commerce Help Center",
   description:
-    "Set up shipping zones, flat rates, weight-based rules, and free shipping in Finxa Commerce.",
+    "Set up shipping zones, flat rates, weight-based rules and free shipping in Finxa Commerce.",
 };
 
 export default function ShippingPage() {
