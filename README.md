@@ -1,16 +1,29 @@
 # Finxa Commerce Help Center
 
-Standalone documentation site for Finxa Commerce merchants.
+A Help Center web application for Finxa Commerce, built with Next.js App Router, providing clear structured step by step guides for core merchant workflows.
+
+## Overview
+
+This project provides practical, step-by-step help articles for core merchant workflows:
+
+- Getting Started
+- Products
+- Payments
+- Storefront
+- Orders
+- Shipping
+- Markets
+
+The app is optimized for mobile and desktop with shared layout components, searchable content and structured metadata for SEO/social sharing.
 
 ## Tech Stack
 
 - Next.js 15 (App Router)
-- TypeScript
 - React 19
+- TypeScript
 - Tailwind CSS 4
-- npm
 
-## Implemented Routes
+## Routes
 
 - /
 - /getting-started
@@ -20,21 +33,43 @@ Standalone documentation site for Finxa Commerce merchants.
 - /orders
 - /shipping
 - /markets
-- /not-found (via not-found.tsx)
+- Not Found route via src/app/not-found.tsx
 
-## Features
+## Key Features
 
-- Global header with navigation and search
-- Responsive sidebar on guide pages
-- Breadcrumb navigation on each guide page
-- Footer with quick links and copyright
-- Homepage search and category cards
-- Unique page metadata per route
-- Homepage Open Graph metadata
-- Semantic HTML structure across all pages
-- Screenshot placeholder blocks ready to replace with real platform captures
+- Global black header and footer
+- Responsive navigation:
+	- Desktop top app bar links
+	- Mobile hamburger menu
+- Guide page sidebar:
+	- Sticky sidebar on desktop
+	- Expand/collapse All Guides menu on mobile
+- Homepage search with category filtering
+- Homepage category cards with featured-first desktop arrangement
+- Breadcrumbs on guide pages
+- Custom 404 page
 
-## Content Notes
+## Project Structure
+
+src/
+
+- app/
+	- layout.tsx (root layout)
+	- page.tsx (homepage)
+	- not-found.tsx (404 page)
+	- [guide routes]/page.tsx
+- components/
+	- site-header.tsx
+	- site-footer.tsx
+	- guide-shell.tsx
+	- sidebar.tsx
+	- article-card.tsx
+	- search-bar.tsx
+	- breadcrumb.tsx
+- lib/
+	- help-center-content.ts (guide/category data source)
+
+## Notes
 
 - All guides use simple, step-by-step instructions.
 - Screenshot areas are currently placeholders and will be replaced with real Finxa Commerce screenshots from the platform UI.
