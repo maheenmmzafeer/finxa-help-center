@@ -12,6 +12,7 @@ export type CategoryCard = {
   description: string;
   href: GuideRoute;
   keywords: string[];
+  subsections: string[];
 };
 
 export const categoryCards: CategoryCard[] = [
@@ -21,6 +22,7 @@ export const categoryCards: CategoryCard[] = [
       "Create your Finxa Commerce store, complete onboarding and publish your first product. Learn the core setup flow step by step so you can get live faster with confidence.",
     href: "/getting-started",
     keywords: ["signup", "onboarding", "store setup", "first product"],
+    subsections: ["Signup", "Complete Onboarding Settings", "Store Setup", "Add Your First Product"],
   },
   {
     title: "Products",
@@ -28,6 +30,7 @@ export const categoryCards: CategoryCard[] = [
       "Manage products, variants, collections, tags, images and product SEO settings.",
     href: "/products",
     keywords: ["variants", "images", "collections", "seo", "inventory"],
+    subsections: ["Create a Product", "Add Product Image", "Add Variants and Images", "Organize with Collections, Tags and SEO", "How to Create a Collection"],
   },
   {
     title: "Payments",
@@ -35,6 +38,7 @@ export const categoryCards: CategoryCard[] = [
       "Set up TAP Payments and offline methods like cash on delivery and bank transfer.",
     href: "/payments",
     keywords: ["tap", "cod", "bank transfer", "checkout", "payment methods"],
+    subsections: ["Connect TAP Payments", "Enable Manual Payment Methods", "Run a Checkout Validation"],
   },
   {
     title: "Storefront",
@@ -42,6 +46,7 @@ export const categoryCards: CategoryCard[] = [
       "Customize your theme using the editor for colors, typography, sections and homepage blocks.",
     href: "/storefront",
     keywords: ["theme", "editor", "branding", "fonts", "sections"],
+    subsections: ["Open the Theme Editor", "Adjust Brand Styling", "Configure Sections and Content Blocks"],
   },
   {
     title: "Orders",
@@ -49,6 +54,7 @@ export const categoryCards: CategoryCard[] = [
       "Track order lifecycle, fulfill shipments, process refunds and review customer details.",
     href: "/orders",
     keywords: ["fulfillment", "refunds", "customer", "order status"],
+    subsections: ["Track the Order Lifecycle", "Fulfill and Ship", "Process Refunds Safely"],
   },
   {
     title: "Shipping",
@@ -56,6 +62,7 @@ export const categoryCards: CategoryCard[] = [
       "Configure shipping zones, flat rates, weight-based rules and free shipping thresholds.",
     href: "/shipping",
     keywords: ["zones", "rates", "weight", "free shipping"],
+    subsections: ["Create Shipping Zones", "Configure Rate Types", "Enable Free Shipping Rules"],
   },
   {
     title: "Markets",
@@ -63,18 +70,16 @@ export const categoryCards: CategoryCard[] = [
       "Run multiple markets with currencies, languages and market-specific storefront overrides.",
     href: "/markets",
     keywords: ["multi-market", "currencies", "languages", "localization"],
+    subsections: ["Create Markets", "Configure Language and Content", "Set Market-Specific Theme Overrides"],
   },
 ];
 
-export const sidebarArticles: Array<{ label: string; href: GuideRoute }> = [
-  { label: "Getting Started", href: "/getting-started" },
-  { label: "Products", href: "/products" },
-  { label: "Payments", href: "/payments" },
-  { label: "Storefront", href: "/storefront" },
-  { label: "Orders", href: "/orders" },
-  { label: "Shipping", href: "/shipping" },
-  { label: "Markets", href: "/markets" },
-];
+export const sidebarArticles: Array<{ label: string; href: GuideRoute; subsections: string[] }> =
+  categoryCards.map((card) => ({
+    label: card.title,
+    href: card.href,
+    subsections: card.subsections,
+  }));
 
 export function filterCategoryCards(query: string): CategoryCard[] {
   const normalized = query.trim().toLowerCase();

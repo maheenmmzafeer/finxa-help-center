@@ -7,6 +7,7 @@ import { useSearchParams } from "next/navigation";
 type SidebarItem = {
   label: string;
   href: string;
+  subsections?: string[];
 };
 
 type SidebarProps = {
@@ -27,20 +28,32 @@ export function Sidebar({ title = "Guides", currentPath, items }: SidebarProps) 
     const isActive = currentPath === item.href;
 
     return (
-      <li key={item.href}>
+      <li key={item.href} className="rounded-xl px-3 py-2">
         <Link
           href={item.href}
           className={[
-            "block rounded-xl px-3 py-2 text-sm transition",
-            isActive
-              ? "bg-teal-100 font-semibold text-teal-900"
-              : "text-slate-700 hover:bg-slate-100 hover:text-slate-900",
+            "block text-sm transition text-slate-700",
+            isActive ? "font-semibold text-teal-900" : "",
           ].join(" ")}
           aria-current={isActive ? "page" : undefined}
           onClick={() => setIsMobileOpen(false)}
         >
-          {item.label}
+          <span
+            className={[
+              "inline-flex rounded-lg px-2 py-1 transition",
+              isActive ? "bg-teal-100 text-teal-900" : "hover:bg-slate-100 hover:text-slate-900",
+            ].join(" ")}
+          >
+            {item.label}
+          </span>
         </Link>
+        {item.subsections?.length ? (
+          <ul className="hidden md:block mt-2 space-y-1 pl-7 text-xs font-normal leading-5 text-slate-500 list-disc">
+            {item.subsections.map((subsection) => (
+              <li key={subsection}>{subsection}</li>
+            ))}
+          </ul>
+        ) : null}
       </li>
     );
   });
