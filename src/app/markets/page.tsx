@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GuideShell } from "@/components/guide-shell";
-import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
+import { Screenshot } from "@/components/screenshot";
 
 export const metadata: Metadata = {
   title: "Markets Guide | Finxa Commerce Help Center",
@@ -43,9 +43,10 @@ export default function MarketsPage() {
           <li>Set region-specific featured collections.</li>
           <li>Preview and publish to that market only.</li>
         </ol>
-        <ScreenshotPlaceholder
-          title="Market settings and localized preview"
-          note="Capture this from Finxa Commerce: market selector with currency and language settings."
+        <Screenshot
+          src="/Finxa.png"
+          alt="Market settings and localized preview"
+          caption="Market settings and localized preview"
         />
       </section>
     </GuideShell>

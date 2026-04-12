@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GuideShell } from "@/components/guide-shell";
-import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
+import { Screenshot } from "@/components/screenshot";
 
 export const metadata: Metadata = {
   title: "Payments Guide | Finxa Commerce Help Center",
@@ -43,9 +43,10 @@ export default function PaymentsPage() {
           <li>Place one test order with a manual method.</li>
           <li>Verify order payment status updates correctly in Orders.</li>
         </ol>
-        <ScreenshotPlaceholder
-          title="Payment methods list"
-          note="Capture this from Finxa Commerce: payment provider status and manual method configuration."
+        <Screenshot
+          src="/Finxa.png"
+          alt="Payment methods list"
+          caption="Payment methods list"
         />
       </section>
     </GuideShell>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GuideShell } from "@/components/guide-shell";
-import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
+import { Screenshot } from "@/components/screenshot";
 
 export const metadata: Metadata = {
   title: "Orders Guide | Finxa Commerce Help Center",
@@ -43,9 +43,10 @@ export default function OrdersPage() {
           <li>Adjust restock behavior for returned inventory.</li>
           <li>Submit and verify the order timeline reflects the refund.</li>
         </ol>
-        <ScreenshotPlaceholder
-          title="Order detail with fulfillment and refund actions"
-          note="Capture this from Finxa Commerce: order timeline, customer details and refund panel."
+        <Screenshot
+          src="/Finxa.png"
+          alt="Order detail with fulfillment and refund actions"
+          caption="Order detail with fulfillment and refund actions"
         />
       </section>
     </GuideShell>

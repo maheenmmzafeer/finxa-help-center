@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GuideShell } from "@/components/guide-shell";
-import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
+import { Screenshot } from "@/components/screenshot";
 
 export const metadata: Metadata = {
   title: "Shipping Guide | Finxa Commerce Help Center",
@@ -43,9 +43,10 @@ export default function ShippingPage() {
           <li>Optionally limit by product tags or collections.</li>
           <li>Test carts above and below threshold values.</li>
         </ol>
-        <ScreenshotPlaceholder
-          title="Shipping zones and rates table"
-          note="Capture this from Finxa Commerce: zone selector with flat and weight-based rate rules."
+        <Screenshot
+          src="/Finxa.png"
+          alt="Shipping zones and rates table"
+          caption="Shipping zones and rates table"
         />
       </section>
     </GuideShell>

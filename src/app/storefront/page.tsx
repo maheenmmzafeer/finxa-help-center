@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GuideShell } from "@/components/guide-shell";
-import { ScreenshotPlaceholder } from "@/components/screenshot-placeholder";
+import { Screenshot } from "@/components/screenshot";
 
 export const metadata: Metadata = {
   title: "Storefront Guide | Finxa Commerce Help Center",
@@ -43,9 +43,10 @@ export default function StorefrontPage() {
           <li>Hide unused sections to keep pages focused.</li>
           <li>Publish once the final preview matches your brand plan.</li>
         </ol>
-        <ScreenshotPlaceholder
-          title="Theme editor panels"
-          note="Capture this from Finxa Commerce: section list, style panel and preview frame."
+        <Screenshot
+          src="/Finxa.png"
+          alt="Theme editor panels"
+          caption="Theme editor panels"
         />
       </section>
     </GuideShell>
