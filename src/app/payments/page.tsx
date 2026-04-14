@@ -35,7 +35,7 @@ export default function PaymentsPage() {
           <li>Go to Payments from the side panel.</li>
           <li>Find the Manual Methods section at below the Payment Providers section.</li>
           <li>Click on Add your first method.</li>
-          <li>Add the name, eg "Cash on Delivery" or "Bank Transfer", add instructions for the customer at checkout and click on Add Method.</li>
+          <li>Add the name, eg Cash on Delivery or Bank Transfer, add instructions for the customer at checkout and click on Add Method.</li>
         </ol>
         <Screenshot
           src="/payment_method.png"

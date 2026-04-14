@@ -74,7 +74,7 @@ export default function GettingStartedPage() {
           <Screenshot
             src="/products.png"
             alt="Finxa products page"
-            caption="Go to Products Page and Click on 'Add Product'"
+            caption="Go to Products Page and click on Add Product"
             priority
           />
           <Screenshot

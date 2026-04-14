@@ -27,7 +27,7 @@ export default function ProductsPage() {
           <Screenshot
             src="/products.png"
             alt="Finxa products page"
-            caption="Go to Products Page and Click on 'Add Product'."
+            caption="Go to Products Page and click on Add Product."
             priority
           />
           <Screenshot
@@ -53,7 +53,7 @@ export default function ProductsPage() {
         <div> <Screenshot
             src="/images.png"
             alt="Finxa Product Images"
-            caption="Find the 'Media' section in the product information page and upload images."
+            caption="Find the Media section in the product information page and upload images."
           />
          </div>
       </section>
@@ -69,7 +69,7 @@ export default function ProductsPage() {
         <div> <Screenshot
             src="/variant.png"
             alt="Finxa Product Variant Setting"
-            caption="Find 'Variants' section in the product information page and click on 'Add another option'."
+            caption="Find the Variants section in the product information page and click on Add another option."
           />
           <Screenshot
             src="/variants.png"
@@ -112,7 +112,7 @@ export default function ProductsPage() {
       <section>
         <h2 className="text-xl font-semibold text-slate-900">How to Create a Collection</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
-          <li>To create a collection, go to Collections under the Products section from the sidebar and click on &apos;Add Collection&apos;. You will be redirected to the collection creation page.</li>
+          <li>To create a collection, go to Collections under the Products section from the sidebar and click on Add Collection. You will be redirected to the collection creation page.</li>
           <li>Write a Name and Description for the Collection and set its status to Active.</li>
           <li>Set the Collection type depending on your needs. Automated type automatically adds products based on the conditions you set.</li>
           <li>For Manual collection type, add products through the product browsing interface.</li>
@@ -121,7 +121,7 @@ export default function ProductsPage() {
         <Screenshot
           src="/collections.png"
           alt="Product Collections"
-          caption="To create a collection, go to Collections under the Products section from the sidebar and click on &apos;Add Collection&apos;."
+          caption="To create a collection, go to Collections under the Products section from the sidebar and click on Add Collection."
         />
         <Screenshot
           src="/collection_settings.png"
