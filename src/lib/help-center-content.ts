@@ -30,7 +30,7 @@ export const categoryCards: CategoryCard[] = [
       "Manage products, variants, collections, tags, images and product SEO settings.",
     href: "/products",
     keywords: ["variants", "images", "collections", "seo", "inventory"],
-    subsections: ["Create a Product", "Add Product Image", "Add Variants and Images", "Organize with Collections, Tags and SEO", "How to Create a Collection"],
+    subsections: ["Create a Product", "Add Product Images", "Add Variants and Images", "Organize with Collections, Tags and SEO", "How to Create a Collection"],
   },
   {
     title: "Payments",
@@ -38,7 +38,7 @@ export const categoryCards: CategoryCard[] = [
       "Set up TAP Payments and offline methods like cash on delivery and bank transfer.",
     href: "/payments",
     keywords: ["tap", "cod", "bank transfer", "checkout", "payment methods"],
-    subsections: ["Connect TAP Payments", "Enable Manual Payment Methods", "Run a Checkout Validation"],
+    subsections: ["Connect TAP Payments", "Enable Manual Payment Methods"],
   },
   {
     title: "Storefront",
