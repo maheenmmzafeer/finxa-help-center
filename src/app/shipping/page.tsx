@@ -18,21 +18,36 @@ export default function ShippingPage() {
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Create Shipping Zones</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
-          <li>Open Settings and choose Shipping.</li>
-          <li>Click Add Zone and name it by region.</li>
-          <li>Select countries or states for that zone.</li>
-          <li>Save before creating rates.</li>
+          <li>Go to Shipping from the sidepanel.</li>
+          <li>Click Add Shipping Zone and name it by region.</li>
+          <li>Select countries for that zone.</li>
+          <li>Add the Shipping rates and click on Create Zone.</li>
         </ol>
+        <Screenshot
+          src="/shipping.png"
+          alt="Shipping Zones Rates"
+          caption="Go to Shipping from the sidepanel and click on Add Shipping Zone."
+        />
+        <Screenshot
+          src="/create_shipping.png"
+          alt="Create Shipping Zones"
+          caption="Select countries for that zone and add the Shipping rates."
+        />
       </section>
 
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Configure Rate Types</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
-          <li>Add a flat-rate option for simple shipping logic.</li>
-          <li>Add a weight-based rate with clear weight brackets.</li>
-          <li>Set expected delivery windows for each method.</li>
-          <li>Preview checkout to confirm the right rate appears.</li>
+          <li>Add a flat-rate option for simple shipping.</li>
+          <li>Add a weight-based rate with clear weight brackets if required.</li>
+          <li>Set expected delivery days for each method.</li>
+          <li>If required, add more rates by clicking on Add Rate option.</li>
         </ol>
+        <Screenshot
+          src="/shipping_rates.png"
+          alt="Shipping Rates"
+          caption="Select the type of Rate and enter the relevant details."
+        />
       </section>
 
       <section>
@@ -40,13 +55,13 @@ export default function ShippingPage() {
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
           <li>Create a free shipping rate in the target zone.</li>
           <li>Set minimum order amount threshold.</li>
-          <li>Optionally limit by product tags or collections.</li>
-          <li>Test carts above and below threshold values.</li>
+          <li>Optionally limit by product tags or collections by clicking on Add Hide Condition option.</li>
+          <li>Save the changes.</li>
         </ol>
         <Screenshot
-          src="/Finxa.png"
-          alt="Shipping zones and rates table"
-          caption="Shipping zones and rates table"
+          src="/free_shipping.png"
+          alt="Free Shipping Rules"
+          caption="Enable free shipping rules for your customers."
         />
       </section>
     </GuideShell>
