@@ -51,15 +51,9 @@ export default async function Home({ searchParams }: HomePageProps) {
           <h1 className="mt-4 text-4xl font-bold tracking-tight text-white md:text-5xl">
             Finxa Commerce Help Center
           </h1>
-          <p className="mt-4 max-w-5xl text-base leading-7 text-slate-200 md:text-lg">
+          <p className="mt-4 max-w-2xl text-base leading-7 text-slate-200 md:text-lg">
             Learn every core workflow with clear steps: launch your store, publish products,
             configure payments, manage orders and expand into new markets.
-          </p>
-          <div className="mt-7 max-w-5xl">
-            <SearchBar defaultValue={query} />
-          </div>
-          <p className="mt-3 text-sm text-slate-300">
-            {results.length} categories match your search.
           </p>
         </div>
       </section>
