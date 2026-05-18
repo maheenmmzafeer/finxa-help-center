@@ -16,8 +16,8 @@ export default function StorefrontPage() {
       currentPath="/storefront"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Open the Theme Editor</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Open the Theme Editor</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Go to Themes from the sidepanel.</li>
           <li>Select the page you want to view and edit.</li>
           <li>Make the necessary changes and click Save.</li>
@@ -35,8 +35,8 @@ export default function StorefrontPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Adjust Brand Styling</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Adjust Brand Styling</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>In the Theme Editor, click on settings button on the left side. The Theme Settings open.</li>
           <li>Set your primary and secondary brand colors.</li>
           <li>Scroll down and open Typography section. Choose heading and body fonts of your choice.</li>
@@ -56,8 +56,8 @@ export default function StorefrontPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Configure Sections and Content Blocks</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Configure Sections and Content Blocks</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>In the Theme Editor, open the Sections panel from the left side, and click on the section you want to edit. </li>
           <li>Add a new section by clicking on the Add Section button.</li>
           <li>Reorder homepage sections using drag-and-drop.</li>

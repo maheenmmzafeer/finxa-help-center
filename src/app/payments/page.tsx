@@ -16,8 +16,8 @@ export default function PaymentsPage() {
       currentPath="/payments"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Connect TAP Payments</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Connect TAP Payments</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Go to Payments from the side panel.</li>
           <li>Select TAP Payments.</li>
           <li>Enter the required details and click on Connect TAP.</li>
@@ -30,8 +30,8 @@ export default function PaymentsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Enable Manual Payment Methods</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Enable Manual Payment Methods</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Go to Payments from the side panel.</li>
           <li>Find the Manual Methods section at below the Payment Providers section.</li>
           <li>Click on Add your first method.</li>

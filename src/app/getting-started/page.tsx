@@ -16,8 +16,8 @@ export default function GettingStartedPage() {
       currentPath="/getting-started"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Signup</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Signup</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Open Finxa Commerce and click on Start Free Trial.</li>
           <li>Enter your full name, email and a secure password.</li>
           <li>Confirm your email using the verification message.</li>
@@ -25,8 +25,8 @@ export default function GettingStartedPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Complete Onboarding Settings</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Complete Onboarding Settings</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>After signing up, you will be redirected to onboarding page.</li>
           <li>Enter a Store name and select your country.</li>
           <li>After saving, you will be redirected to your dashboard.</li>
@@ -34,8 +34,8 @@ export default function GettingStartedPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Store Setup</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Store Setup</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>While on the dashboard, go to Settings on the bottom right corner, and Set your default currency.</li>
           <li>Set up a custom domain of your preference by following the given instructions on the Domains page, and create your custom pages through the Page sections.</li>
           <li>Configure tax preferences through the Taxes page to match your region. You may also add the taxes for other countries your store will be selling to.</li>
@@ -62,8 +62,8 @@ export default function GettingStartedPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Add Your First Product</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Add Your First Product</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Go to Products and click Add Product.</li>
           <li>Enter product title, description, price and stock quantity.</li>
           <li>Upload at least one product image for the listing card.</li>

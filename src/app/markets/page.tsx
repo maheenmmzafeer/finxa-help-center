@@ -16,8 +16,8 @@ export default function MarketsPage() {
       currentPath="/markets"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Create Markets</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Create Markets</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Click on Markets from the sidepanel.</li>
           <li>Click Add Market and choose target countries.</li>
           <li>Set the currency and language for the market.</li>
@@ -37,8 +37,8 @@ export default function MarketsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Configure Language and Content</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Configure Language and Content</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Find the Language section at the bottom of the market configuration page and click on Translations.</li>
           <li>Click on Add Language on the bottom of the page.</li>
           <li>Choose the language you wish to add.</li>
@@ -73,8 +73,8 @@ export default function MarketsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Set Market-Specific Theme Overrides</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Set Market-Specific Theme Overrides</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Open Theme Editor and pick a specific market you wish to change.</li>
           <li>Make your theme adjustments and Save the Market.</li>
         </ol>

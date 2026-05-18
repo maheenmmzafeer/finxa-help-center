@@ -16,8 +16,8 @@ export default function ShippingPage() {
       currentPath="/shipping"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Create Shipping Zones</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Create Shipping Zones</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Go to Shipping from the sidepanel.</li>
           <li>Click Add Shipping Zone and name it by region.</li>
           <li>Select countries for that zone.</li>
@@ -36,8 +36,8 @@ export default function ShippingPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Configure Rate Types</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Configure Rate Types</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Add a flat-rate option for simple shipping.</li>
           <li>Add a weight-based rate with clear weight brackets if required.</li>
           <li>Set expected delivery days for each method.</li>
@@ -51,8 +51,8 @@ export default function ShippingPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Enable Free Shipping Rules</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Enable Free Shipping Rules</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Create a free shipping rate in the target zone.</li>
           <li>Set minimum order amount threshold.</li>
           <li>Optionally limit by product tags or collections by clicking on Add Hide Condition option.</li>

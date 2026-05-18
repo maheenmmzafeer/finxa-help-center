@@ -11,15 +11,15 @@ export function SiteHeader() {
   const getMobileNavHref = (href: string) => (href === "/" ? "/" : href);
 
   return (
-    <header className="border-b border-slate-800 bg-black/95 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 md:px-6">
-        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+    <header className="border-b border-white/12 bg-[rgba(7,16,24,0.5)] shadow-[0_18px_50px_rgba(0,0,0,0.24)] backdrop-blur-2xl">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-4 py-3 md:px-6 md:py-3.5">
+        <div className="flex flex-col gap-1 md:flex-row md:items-center md:justify-between">
           <div className="flex items-start justify-between gap-3">
             <div>
-              <Link href="/" className="text-xl font-bold tracking-tight text-white">
+              <Link href="/" className="text-lg font-bold tracking-tight text-white md:text-xl">
                 Finxa Commerce Help Center
               </Link>
-              <p className="mt-1 text-sm text-slate-300">
+              <p className="mt-0.5 max-w-2xl text-[11px] leading-4 text-slate-400 md:text-xs">
                 Practical guides for merchants building and scaling their stores.
               </p>
             </div>
@@ -27,7 +27,7 @@ export function SiteHeader() {
               type="button"
               aria-label="Toggle navigation menu"
               aria-expanded={menuOpen}
-              className="mt-1 inline-flex items-center rounded-lg border border-slate-700 p-2 text-slate-100 transition hover:bg-slate-800 md:hidden"
+              className="mt-1 inline-flex items-center rounded-xl border border-white/10 bg-white/5 p-2 text-slate-200 shadow-sm transition hover:bg-white/10 md:hidden"
               onClick={() => setMenuOpen((current) => !current)}
             >
               <span className="sr-only">Open menu</span>
@@ -43,13 +43,13 @@ export function SiteHeader() {
           </div>
         </div>
         <nav aria-label="Primary navigation" className="hidden md:block">
-          <div className="overflow-x-auto overflow-y-visible pt-1">
-            <ul className="flex min-w-max items-center gap-2.5 pb-1">
+          <div className="overflow-x-auto overflow-y-visible pt-0">
+            <ul className="flex min-w-max items-center gap-2.5 pb-0">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="block rounded-full border border-slate-600/70 bg-gradient-to-b from-slate-800 to-slate-900 px-4 py-2 text-sm font-semibold text-slate-100 shadow-[0_2px_10px_rgba(0,0,0,0.35)] ring-1 ring-white/5 transition duration-200 hover:-translate-y-0.5 hover:border-slate-400 hover:from-slate-700 hover:to-slate-800 hover:text-white"
+                    className="inline-flex items-center border-b-2 border-transparent px-1.5 py-1.5 text-sm font-semibold text-slate-300 transition duration-200 hover:border-[color:var(--accent)] hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -59,13 +59,13 @@ export function SiteHeader() {
           </div>
         </nav>
         {menuOpen ? (
-          <nav aria-label="Mobile navigation" className="rounded-xl border border-slate-800 bg-slate-950 p-2 md:hidden">
+          <nav aria-label="Mobile navigation" className="rounded-[1.35rem] border border-white/10 bg-[rgba(7,16,24,0.78)] p-2 shadow-[0_20px_42px_rgba(0,0,0,0.22)] backdrop-blur-2xl md:hidden">
             <ul className="space-y-1">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={getMobileNavHref(item.href)}
-                    className="block rounded-lg px-3 py-2 text-sm font-medium text-slate-100 transition hover:bg-slate-800"
+                    className="block rounded-xl px-3 py-2 text-sm font-medium text-slate-200 transition hover:bg-white/10 hover:text-white"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}

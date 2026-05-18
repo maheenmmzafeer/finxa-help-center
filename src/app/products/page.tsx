@@ -16,8 +16,8 @@ export default function ProductsPage() {
       currentPath="/products"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Create a Product</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Create a Product</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Open Products and click Add Product.</li>
           <li>Write a clear product name and concise description.</li>
           <li>Set price, compare-at price, SKU and available stock.</li>
@@ -44,8 +44,8 @@ export default function ProductsPage() {
       </section>
 
 <section>
-        <h2 className="text-xl font-semibold text-slate-900">Add Product Images</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Add Product Images</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Scroll down to the Media section.</li>
           <li>Drag and drop media from your device or click on browse to pick files from your device.</li>
           <li>Save the product.</li>
@@ -59,8 +59,8 @@ export default function ProductsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Add Variants and Images</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Add Variants and Images</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Enable variants and define options like Size and Color.</li>
           <li>Add each variant combination and unique inventory value.</li>
           <li>Upload images and assign specific images to variants.</li>
@@ -90,8 +90,8 @@ export default function ProductsPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Organize with Collections, Tags and SEO</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Organize with Collections, Tags and SEO</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Add product tags for filtering when users search the product.</li>
           <li>Set SEO title and meta description in search settings.</li>
           <li>Save and validate the storefront product URL.</li>
@@ -110,8 +110,8 @@ export default function ProductsPage() {
         </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">How to Create a Collection</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">How to Create a Collection</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>To create a collection, go to Collections under the Products section from the sidebar and click on Add Collection. You will be redirected to the collection creation page.</li>
           <li>Write a Name and Description for the Collection and set its status to Active.</li>
           <li>Set the Collection type depending on your needs. Automated type automatically adds products based on the conditions you set.</li>

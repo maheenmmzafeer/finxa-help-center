@@ -1,9 +1,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f5ebe4;
-  --foreground: #0f172a;
-  --page-gradient: #f9eee6;
+  --background: #071018;
+  --foreground: #ecf4fb;
+  --page-gradient:
+    radial-gradient(circle at top left, rgba(72, 169, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(122, 92, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 50% 108%, rgba(18, 116, 103, 0.18), transparent 32%),
+    linear-gradient(180deg, #081018 0%, #07111a 45%, #050b12 100%);
+  --surface: rgba(10, 18, 29, 0.72);
+  --surface-strong: #0e1724;
+  --border: rgba(171, 200, 228, 0.14);
+  --shadow: 0 28px 100px rgba(0, 0, 0, 0.42);
+  --accent: #45e0d1;
+  --accent-strong: #1bc7b4;
 }
 
 @theme inline {
@@ -15,9 +25,12 @@
 }
 
 body {
+  min-height: 100%;
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-manrope), "Segoe UI", sans-serif;
+  background-image: var(--page-gradient);
+  background-attachment: fixed;
 }
 
 h1,
@@ -28,4 +41,16 @@ h3 {
 
 .bg-page-gradient {
   background: var(--page-gradient);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(69, 224, 209, 0.18), transparent 22%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.08), transparent 20%);
+  opacity: 0.7;
+  mix-blend-mode: screen;
 }

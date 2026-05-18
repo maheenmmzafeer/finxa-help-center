@@ -16,8 +16,8 @@ export default function OrdersPage() {
       currentPath="/orders"
     >
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Track the Order Lifecycle</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Track the Order Lifecycle</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Open Orders through the side panel to view all orders.</li>
           <li>Filter by payment status, fulfillment status and date range.</li>
           <li>Open an order record to view order details and timeline events.</li>
@@ -35,8 +35,8 @@ export default function OrdersPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Fulfill and Ship</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Fulfill and Ship</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Select the order to view order details.</li>
           <li>You may Mark as Paid if they have already paid, or collect payment later.</li>
           <li>Click on Mark as Fulfilled. A popup will open to allow you to enter tracking details.</li>
@@ -65,8 +65,8 @@ export default function OrdersPage() {
       </section>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Process Refunds Safely</h2>
-        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-700">
+        <h2 className="text-xl font-semibold text-white">Process Refunds Safely</h2>
+        <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200">
           <li>Open the order and scroll down to find the Returns section.</li>
           <li>Click on Create Return.</li>
           <li>Select the items to be returned and specify the reason for the return.</li>
