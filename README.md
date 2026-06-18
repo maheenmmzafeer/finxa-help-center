@@ -68,8 +68,3 @@ src/
 	- breadcrumb.tsx
 - lib/
 	- help-center-content.ts (guide/category data source)
-
-## Notes
-
-- All guides use simple, step-by-step instructions.
-- Screenshot areas are currently placeholders and will be replaced with real Finxa Commerce screenshots from the platform UI.
